@@ -35,9 +35,13 @@ pipeline {
                 }
             }
         }
+	stage ( 'deployment trigger'){
+          steps {
+            build 'release-02_cd'
     }
 }
-
+}
+}
 
 
 
